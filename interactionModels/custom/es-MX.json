@@ -1,0 +1,724 @@
+{
+  "interactionModel": {
+    "dialog": {
+      "intents": [
+        {
+          "slots": [
+            {
+              "name": "objetoUno",
+              "elicitationRequired": true,
+              "type": "Objetos",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1018942491771.518969223466"
+              }
+            },
+            {
+              "name": "objetoDos",
+              "elicitationRequired": true,
+              "type": "Objetos",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.551885648469.1182233164197"
+              }
+            },
+            {
+              "name": "objetoTres",
+              "elicitationRequired": true,
+              "type": "Objetos",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1018942491771.684815419216"
+              }
+            }
+          ],
+          "name": "ObjetoIntent",
+          "confirmationRequired": false,
+          "prompts": {}
+        },
+        {
+          "slots": [
+            {
+              "name": "numero",
+              "elicitationRequired": true,
+              "type": "AMAZON.NUMBER",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.187508403271.199458893492"
+              }
+            }
+          ],
+          "name": "UnoDosIntent",
+          "confirmationRequired": false,
+          "prompts": {}
+        },
+        {
+          "slots": [
+            {
+              "name": "primero",
+              "elicitationRequired": false,
+              "type": "AMAZON.NUMBER",
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "segundo",
+              "elicitationRequired": false,
+              "type": "AMAZON.NUMBER",
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "tercero",
+              "elicitationRequired": false,
+              "type": "AMAZON.NUMBER",
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "cuarto",
+              "elicitationRequired": false,
+              "type": "AMAZON.NUMBER",
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ],
+          "name": "CandadoIntent",
+          "confirmationRequired": false,
+          "prompts": {}
+        },
+        {
+          "slots": [
+            {
+              "name": "primera",
+              "elicitationRequired": true,
+              "type": "Abecedario",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.325341344427.184840284247"
+              }
+            },
+            {
+              "name": "segunda",
+              "elicitationRequired": true,
+              "type": "Abecedario",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.325341344427.338432493699"
+              }
+            },
+            {
+              "name": "tercera",
+              "elicitationRequired": true,
+              "type": "Abecedario",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.325341344427.764247239429"
+              }
+            },
+            {
+              "name": "cuarta",
+              "elicitationRequired": true,
+              "type": "Abecedario",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.325341344427.372846369840"
+              }
+            },
+            {
+              "name": "quinta",
+              "elicitationRequired": true,
+              "type": "Abecedario",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.325341344427.1048948582237"
+              }
+            },
+            {
+              "name": "sexta",
+              "elicitationRequired": true,
+              "type": "Abecedario",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.325341344427.1054926742674"
+              }
+            }
+          ],
+          "name": "PuertaIntent",
+          "confirmationRequired": false,
+          "prompts": {}
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "ayudame",
+            "ayúdame",
+            "ayuda"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hola",
+            "como estás",
+            "di hola mundo",
+            "di hola",
+            "hola mundo"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": [
+            "continuar",
+            "acepto",
+            "aceptar",
+            "confirmar",
+            "sí",
+            "si"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "objetoUno",
+              "type": "Objetos",
+              "samples": [
+                "{objetoUno}"
+              ]
+            },
+            {
+              "name": "objetoDos",
+              "type": "Objetos",
+              "samples": [
+                "{objetoDos}"
+              ]
+            },
+            {
+              "name": "objetoTres",
+              "type": "Objetos",
+              "samples": [
+                "{objetoTres}"
+              ]
+            }
+          ],
+          "name": "ObjetoIntent",
+          "samples": [
+            "{objetoUno} {objetoDos}",
+            "{objetoUno}",
+            "{objetoUno} {objetoDos} y {objetoTres}",
+            "{objetoUno} {objetoDos} {objetoTres}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "numero",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{numero}"
+              ]
+            }
+          ],
+          "name": "UnoDosIntent",
+          "samples": [
+            "{numero}"
+          ]
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": [
+            "no quiero",
+            "no"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "primero",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "segundo",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "tercero",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "cuarto",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "CandadoIntent",
+          "samples": [
+            "{primero} {segundo} {tercero} {cuarto}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "ReproducirIntent",
+          "samples": [
+            "play",
+            "reproduce",
+            "reproducir grabadora",
+            "reproducir"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "primera",
+              "type": "Abecedario",
+              "samples": [
+                "{primera}"
+              ]
+            },
+            {
+              "name": "segunda",
+              "type": "Abecedario",
+              "samples": [
+                "{segunda}"
+              ]
+            },
+            {
+              "name": "tercera",
+              "type": "Abecedario",
+              "samples": [
+                "{tercera}"
+              ]
+            },
+            {
+              "name": "cuarta",
+              "type": "Abecedario",
+              "samples": [
+                "{cuarta}"
+              ]
+            },
+            {
+              "name": "quinta",
+              "type": "Abecedario",
+              "samples": [
+                "{quinta}"
+              ]
+            },
+            {
+              "name": "sexta",
+              "type": "Abecedario",
+              "samples": [
+                "{sexta}"
+              ]
+            }
+          ],
+          "name": "PuertaIntent",
+          "samples": [
+            "{primera} {segunda} {tercera} {cuarta} {quinta} ",
+            "{primera} {segunda} {tercera} {cuarta}",
+            "{primera} {segunda} {tercera}",
+            "{primera} {segunda}",
+            "{primera}",
+            "{primera} {segunda} {tercera} {cuarta} {quinta} {sexta}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "RepiteIntent",
+          "samples": [
+            "di lo último que dijiste",
+            "dilo de nuevo",
+            "dilo otra vez",
+            "repitelo de nuevo",
+            "que dijiste",
+            "répitelo de nuevo",
+            "qué dijiste",
+            "repite"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "cuerda"
+              },
+              "id": "1"
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "rompe candado"
+                ],
+                "value": "rompe candados"
+              },
+              "id": "2"
+            },
+            {
+              "name": {
+                "value": "grabadora"
+              },
+              "id": "3"
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "cinta métrica",
+                  "cinta"
+                ],
+                "value": "cinta metrica"
+              },
+              "id": "4"
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "botiquín"
+                ],
+                "value": "botiquin"
+              },
+              "id": "5"
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "batería",
+                  "batería portátil",
+                  "bateria"
+                ],
+                "value": "bateria portatil"
+              },
+              "id": "6"
+            },
+            {
+              "name": {
+                "value": "linterna"
+              },
+              "id": "7"
+            }
+          ],
+          "name": "Objetos"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "2"
+              }
+            },
+            {
+              "name": {
+                "value": "1"
+              }
+            }
+          ],
+          "name": "UnoDos"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "x"
+              }
+            },
+            {
+              "name": {
+                "value": "ñ"
+              }
+            },
+            {
+              "name": {
+                "value": "z"
+              }
+            },
+            {
+              "name": {
+                "value": "y"
+              }
+            },
+            {
+              "name": {
+                "value": "w"
+              }
+            },
+            {
+              "name": {
+                "value": "v"
+              }
+            },
+            {
+              "name": {
+                "value": "u"
+              }
+            },
+            {
+              "name": {
+                "value": "t"
+              }
+            },
+            {
+              "name": {
+                "value": "s"
+              }
+            },
+            {
+              "name": {
+                "value": "r"
+              }
+            },
+            {
+              "name": {
+                "value": "q"
+              }
+            },
+            {
+              "name": {
+                "value": "p"
+              }
+            },
+            {
+              "name": {
+                "value": "o"
+              }
+            },
+            {
+              "name": {
+                "value": "n"
+              }
+            },
+            {
+              "name": {
+                "value": "m"
+              }
+            },
+            {
+              "name": {
+                "value": "l"
+              }
+            },
+            {
+              "name": {
+                "value": "k"
+              }
+            },
+            {
+              "name": {
+                "value": "j"
+              }
+            },
+            {
+              "name": {
+                "value": "i"
+              }
+            },
+            {
+              "name": {
+                "value": "h"
+              }
+            },
+            {
+              "name": {
+                "value": "g"
+              }
+            },
+            {
+              "name": {
+                "value": "f"
+              }
+            },
+            {
+              "name": {
+                "value": "e"
+              }
+            },
+            {
+              "name": {
+                "value": "d"
+              }
+            },
+            {
+              "name": {
+                "value": "c"
+              }
+            },
+            {
+              "name": {
+                "value": "b"
+              }
+            },
+            {
+              "name": {
+                "value": "a"
+              }
+            }
+          ],
+          "name": "Abecedario"
+        }
+      ],
+      "invocationName": "abre c. c."
+    },
+    "prompts": [
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Ahora dime el segundo objeto"
+          }
+        ],
+        "id": "Elicit.Slot.551885648469.1182233164197"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Dime el primer objeto"
+          }
+        ],
+        "id": "Elicit.Slot.1018942491771.518969223466"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Por último, dame el tercer objeto"
+          }
+        ],
+        "id": "Elicit.Slot.1018942491771.684815419216"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Sólo puedes elegir entre uno y dos"
+          }
+        ],
+        "id": "Slot.Validation.1570060199527.285295267979.401642905466"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Sólo puedes elegir entre uno y dos"
+          }
+        ],
+        "id": "Slot.Validation.1570060199527.285295267979.448640889620"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Tienes que elegir entre uno y dos"
+          }
+        ],
+        "id": "Elicit.Slot.187508403271.199458893492"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Dame el segundo dígito"
+          }
+        ],
+        "id": "Elicit.Slot.1089660570334.112201728215"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Dame el tercer dígito"
+          }
+        ],
+        "id": "Elicit.Slot.1089660570334.288611530689"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Dame el cuarto dígito"
+          }
+        ],
+        "id": "Elicit.Slot.1089660570334.1318649054382"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Dame el primer dígito"
+          }
+        ],
+        "id": "Elicit.Slot.1089660570334.1314665398929"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Dime la segunda letra"
+          }
+        ],
+        "id": "Elicit.Slot.325341344427.338432493699"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Dime la tercer letra"
+          }
+        ],
+        "id": "Elicit.Slot.325341344427.764247239429"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Dime la cuarta letra"
+          }
+        ],
+        "id": "Elicit.Slot.325341344427.372846369840"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Dime la quinta letra"
+          }
+        ],
+        "id": "Elicit.Slot.325341344427.1048948582237"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Dime la sexta letra"
+          }
+        ],
+        "id": "Elicit.Slot.325341344427.1054926742674"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Dime la primera letra"
+          }
+        ],
+        "id": "Elicit.Slot.325341344427.184840284247"
+      }
+    ]
+  }
+}
